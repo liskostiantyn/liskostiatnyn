@@ -12,11 +12,13 @@ const createTooltip = (element, text) => {
     tooltip.style.top = tooltipTop + 'px';
     tooltip.style.left = tooltipLeft + 'px';
 
-    document.getElementById("button").addEventListener("mouseover", function(event) {
+    let mouseover = document.getElementById("button");
+    mouseover.addEventListener("mouseover", function(event) {
         event.target.style = document.body.append(tooltip);
     });
 
-    document.getElementById("button").addEventListener("mouseout", function() {
+    let mouseout = document.getElementById("button");
+    mouseout.addEventListener("mouseout", function() {
         if (tooltip) {
         tooltip.remove();
         }
@@ -29,7 +31,6 @@ const button = document.getElementById("button");
 
 
 const divButton = document.getElementById('div-button');
-
     divButton.classList.add('div-button')
 
 createTooltip(button, "Це є підказка, яка випливає зверху");

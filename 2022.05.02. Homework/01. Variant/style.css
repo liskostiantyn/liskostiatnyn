@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    background: #f1f1f1;
+    padding: 30px;
+}
+
+ button {
+     background: none;
+     border: 1px solid black;
+     border-radius: 4px;
+     padding: 10px 20px;
+     font-size: 18px;
+ }
+
+ button:hover {
+    background: red;
+ }
+
+ button:active {
+     background: #000;
+     color: #fff;
+ }
+
+ .slider {
+     width: 512px;
+     height: 768px;
+     border: 3px solid black;
+     margin: 30px auto;
+     overflow: hidden;
+ }
+
+ .slider-line {
+     height: 768px;
+     width: 2048px;
+     display: flex;
+     position: relative;
+     left: 0;
+     transition: all ease 1s;
+ }
+ .button {
+     text-align: center;
+ }
